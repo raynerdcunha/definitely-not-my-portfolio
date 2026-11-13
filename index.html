@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
 <title>404 — Site Under Construction</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
 <style>
@@ -46,11 +47,11 @@
     overflow: hidden;
   }
   .glitch::before {
-    color: var(--accent);
+    color: var(--g1, var(--accent));
     animation: glitch1 2.5s infinite linear alternate-reverse;
   }
   .glitch::after {
-    color: #33e0ff;
+    color: var(--g2, #33e0ff);
     animation: glitch2 3s infinite linear alternate-reverse;
   }
   @keyframes glitch1 {
@@ -108,6 +109,29 @@
     font-size: 11px;
     color: #4a4a55;
   }
+  footer a { color: inherit; text-decoration: none; border-bottom: 1px dotted #4a4a55; }
+  footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .hint { margin-top: 6px; font-size: 11px; color: #4a4a55; }
+  .glitch { cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
+  .toast-fall {
+    position: fixed;
+    top: -48px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: toastfall linear forwards;
+  }
+  @keyframes toastfall {
+    to { transform: translateY(115vh) rotate(var(--spin, 360deg)); }
+  }
+  .panel { cursor: pointer; }
+  .dance { animation: dance .35s ease-in-out infinite alternate; }
+  @keyframes dance {
+    0%   { transform: translate(-6px, 2px) rotate(-3deg) scale(1); }
+    50%  { transform: translate(5px, -5px) rotate(2deg) scale(1.04); }
+    100% { transform: translate(-3px, 4px) rotate(-1deg) scale(.98); }
+  }
+  .cw { display: inline-block; white-space: nowrap; }
+  .cl { display: inline-block; will-change: transform; }
 </style>
 </head>
 <body>
@@ -123,8 +147,9 @@
   </div>
 
   <p class="visitor">You are visitor <strong id="count">#…</strong> to grace this broken page.</p>
+  <p class="visitor hint">psst&hellip; there's an easter egg on this page.</p>
 
-  <footer>&copy; 2026 RAYNER DCUNHA — SITE OFFLINE FOR RENOVATIONS</footer>
+  <footer>SITE OFFLINE FOR RENOVATIONS<br>Copyright &copy; 2026 <a href="https://www.raynerdcunha.com" title="You found it.">RAYNER DCUNHA</a></footer>
 
   <script>
     const dateEl = document.getElementById('date');
@@ -174,6 +199,133 @@
       .then(r => r.json())
       .then(d => { countEl.textContent = '#' + d.value; })
       .catch(() => { countEl.textContent = '#???'; });
+
+    // easter egg 1: click the 404 to swap the glitch colours
+    const glitchEl = document.querySelector('.glitch');
+    const palettes = [
+      ['#ff3366', '#33e0ff'],
+      ['#7CFC00', '#b266ff'],
+      ['#ff9f1c', '#2d7dff'],
+      ['#ff4df0', '#ffe94d'],
+      ['#00ffa3', '#ff5d5d']
+    ];
+    let paletteIdx = 0;
+    glitchEl.addEventListener('click', () => {
+      paletteIdx = (paletteIdx + 1) % palettes.length;
+      glitchEl.style.setProperty('--g1', palettes[paletteIdx][0]);
+      glitchEl.style.setProperty('--g2', palettes[paletteIdx][1]);
+    });
+
+    // easter egg 2: type "toast" anywhere for toast rain
+    let typed = '';
+    document.addEventListener('keydown', (e) => {
+      if (!e.key || e.key.length !== 1) return;
+      typed = (typed + e.key.toLowerCase()).slice(-5);
+      if (typed === 'toast') { typed = ''; rain({ count: 45, emojis: ['\u{1F35E}'], spread: 1.2 }); }
+    });
+    function rain({ count, emojis, spread }) {
+      for (let i = 0; i < count; i++) {
+        const t = document.createElement('div');
+        t.className = 'toast-fall';
+        t.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        t.style.left = (Math.random() * 96) + 'vw';
+        t.style.fontSize = (22 + Math.random() * 28) + 'px';
+        t.style.animationDuration = (2.2 + Math.random() * 2.2) + 's';
+        t.style.animationDelay = (Math.random() * spread) + 's';
+        t.style.setProperty('--spin', ((Math.random() < .5 ? -1 : 1) * (180 + Math.random() * 540)) + 'deg');
+        document.body.appendChild(t);
+        setTimeout(() => t.remove(), (spread + 5) * 1000 + 1500);
+      }
+    }
+
+    // easter egg 3: click the stats box for a 5 second show
+    // toast and egg rain, the 404 dances, and the letters fall off the page
+    const SHOW_MS = 5000;
+    const fallTargets = ['h2', 'p.sub', '.panel .row > span:first-child', 'p.visitor', 'footer'];
+    const unitIds = ['date', 'time', 'region', 'weather', 'count'];
+    let showing = false;
+
+    function wrapChars(node, out) {
+      Array.from(node.childNodes).forEach((child) => {
+        if (child.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            const w = document.createElement('span');
+            w.className = 'cw';
+            Array.from(part).forEach((ch) => {
+              const s = document.createElement('span');
+              s.className = 'cl';
+              s.textContent = ch;
+              w.appendChild(s);
+              out.push(s);
+            });
+            frag.appendChild(w);
+          });
+          node.replaceChild(frag, child);
+        } else if (child.nodeType === 1) {
+          if (unitIds.includes(child.id)) { out.push(child); child.style.display = 'inline-block'; }
+          else wrapChars(child, out);
+        }
+      });
+    }
+
+    function runShow() {
+      if (showing) return;
+      showing = true;
+
+      // 1. rain of toast and eggs
+      rain({ count: 80, emojis: ['\u{1F35E}', '\u{1F95A}', '\u{1F35E}', '\u{1F95A}', '\u{1F423}'], spread: 3 });
+
+      // 2. dancing 404
+      glitchEl.classList.add('dance');
+      const dancer = setInterval(() => {
+        const p = palettes[Math.floor(Math.random() * palettes.length)];
+        glitchEl.style.setProperty('--g1', p[0]);
+        glitchEl.style.setProperty('--g2', p[1]);
+      }, 320);
+
+      // 3. letters fall
+      const saved = [];
+      const pieces = [];
+      document.querySelectorAll(fallTargets.join(',')).forEach((el) => {
+        saved.push([el, el.innerHTML]);
+        wrapChars(el, pieces);
+      });
+      unitIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el && !pieces.includes(el)) { pieces.push(el); el.style.display = 'inline-block'; }
+      });
+      const info = pieces.map((p) => ({ p, top: p.getBoundingClientRect().top }));
+      info.forEach(({ p, top }) => {
+        const dist = window.innerHeight - top + 80;
+        const rot = (Math.random() < .5 ? -1 : 1) * (40 + Math.random() * 320);
+        p.style.transition = 'transform ' + (0.9 + Math.random() * 0.9) + 's cubic-bezier(.5,0,1,1) ' + (Math.random() * 0.7) + 's';
+        p.style.transform = 'translateY(' + dist + 'px) rotate(' + rot + 'deg)';
+      });
+
+      // 4. after 5 seconds everything goes back to normal
+      setTimeout(() => {
+        clearInterval(dancer);
+        glitchEl.classList.remove('dance');
+        glitchEl.style.setProperty('--g1', palettes[paletteIdx][0]);
+        glitchEl.style.setProperty('--g2', palettes[paletteIdx][1]);
+        info.forEach(({ p }) => {
+          p.style.transition = 'transform ' + (0.6 + Math.random() * 0.5) + 's ease-out ' + (Math.random() * 0.4) + 's';
+          p.style.transform = 'none';
+        });
+        setTimeout(() => {
+          saved.forEach(([el, html]) => { el.innerHTML = html; });
+          unitIds.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) { el.style.transition = ''; el.style.transform = ''; el.style.display = ''; }
+          });
+          showing = false;
+        }, 1600);
+      }, SHOW_MS);
+    }
+    document.querySelector('.panel').addEventListener('click', runShow);
   </script>
 </body>
-</html>
+</html>

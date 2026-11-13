@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 1000" width="940" height="1000" role="img" aria-label="Recipe card: how to make toast. Ingredients: 1 slice of bread, butter, 30 seconds of patience. Steps: take bread, toast it, wait 30 seconds, butter it, eat.">
+<defs>
+<g id="bread"><path d="M110 120 C110 70 160 55 200 70 C240 55 290 70 290 120 C290 140 280 150 270 152 L270 235 C270 247 260 255 248 255 L152 255 C140 255 130 247 130 235 L130 152 C120 150 110 140 110 120 Z" fill="#d9a85a"/><path d="M128 124 C128 86 166 74 200 86 C234 74 272 86 272 124 C272 138 264 146 254 148 L254 232 C254 238 250 240 244 240 L156 240 C150 240 146 238 146 232 L146 148 C136 146 128 138 128 124 Z" fill="#f7e6bd"/></g>
+<g id="toast"><path d="M110 120 C110 70 160 55 200 70 C240 55 290 70 290 120 C290 140 280 150 270 152 L270 235 C270 247 260 255 248 255 L152 255 C140 255 130 247 130 235 L130 152 C120 150 110 140 110 120 Z" fill="#c98b3c"/><path d="M128 124 C128 86 166 74 200 86 C234 74 272 86 272 124 C272 138 264 146 254 148 L254 232 C254 238 250 240 244 240 L156 240 C150 240 146 238 146 232 L146 148 C136 146 128 138 128 124 Z" fill="#f2cf8f"/><circle cx="178" cy="130" r="5" fill="#e0b46a"/><circle cx="218" cy="165" r="6" fill="#e0b46a"/><circle cx="190" cy="198" r="4" fill="#e0b46a"/></g>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#e6d3ae"/></pattern>
+</defs>
+<rect width="940" height="1000" rx="28" fill="#f4ead8"/><rect width="940" height="1000" rx="28" fill="url(#dots)"/>
+<rect x="8" y="8" width="924" height="984" rx="22" fill="none" stroke="#c98b3c" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+<text x="470" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="56" font-weight="700" fill="#4a2f12">How to Make Toast</text>
+<text x="470" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" font-style="italic" fill="#8a6a3d">A culinary guide in five easy steps</text>
+<rect x="243.0" y="136" width="150" height="32" rx="16" fill="#3f9b5a"/><text x="318.0" y="157" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">Difficulty: easy</text>
+<rect x="405.0" y="136" width="170" height="32" rx="16" fill="#d9822b"/><text x="490.0" y="157" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">Prep time: 30 sec</text>
+<rect x="587.0" y="136" width="110" height="32" rx="16" fill="#3b7dd8"/><text x="642.0" y="157" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">Serves: 1</text>
+<g transform="translate(0,190)">
+<rect x="15" y="18" width="170" height="172" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<circle cx="39" cy="42" r="13" fill="#c98b3c"/><text x="39" y="47.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">1</text>
+<text x="100" y="216" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#4a2f12">Bread</text>
+<path d="M189 96 l8 8 l-8 8" stroke="#c98b3c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="200" y="18" width="170" height="172" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<circle cx="224" cy="42" r="13" fill="#c98b3c"/><text x="224" y="47.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">2</text>
+<text x="285" y="216" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#4a2f12">Toaster</text>
+<path d="M374 96 l8 8 l-8 8" stroke="#c98b3c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="385" y="18" width="170" height="172" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<circle cx="409" cy="42" r="13" fill="#c98b3c"/><text x="409" y="47.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">3</text>
+<text x="470" y="216" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#4a2f12">Wait 30 sec</text>
+<path d="M559 96 l8 8 l-8 8" stroke="#c98b3c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="570" y="18" width="170" height="172" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<circle cx="594" cy="42" r="13" fill="#c98b3c"/><text x="594" y="47.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">4</text>
+<text x="655" y="216" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#4a2f12">Butter</text>
+<path d="M744 96 l8 8 l-8 8" stroke="#c98b3c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="755" y="18" width="170" height="172" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<circle cx="779" cy="42" r="13" fill="#c98b3c"/><text x="779" y="47.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">5</text>
+<text x="840" y="216" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#4a2f12">Enjoy</text>
+<ellipse cx="100" cy="168" rx="38" ry="6" fill="#eadcc0"/><use href="#bread" transform="translate(16,47) scale(.42)"/>
+<ellipse cx="285" cy="172" rx="56" ry="7" fill="#eadcc0"/><g><animateTransform attributeName="transform" type="translate" values="0 6;0 -8;0 6" dur="2.4s" repeatCount="indefinite"/><use href="#bread" transform="translate(225,45) scale(.3)"/></g>
+<rect x="235" y="100" width="100" height="62" rx="16" fill="#b8c0c8"/><rect x="235" y="100" width="100" height="14" rx="7" fill="#cfd6dd"/><rect x="247" y="100" width="76" height="8" rx="4" fill="#5b636b"/><rect x="335" y="114" width="8" height="24" rx="4" fill="#7b848c"/><rect x="247" y="162" width="14" height="6" rx="3" fill="#7b848c"/><rect x="309" y="162" width="14" height="6" rx="3" fill="#7b848c"/><circle cx="257" cy="140" r="5" fill="#ff7a3c"/>
+<rect x="463" y="54" width="14" height="9" rx="3" fill="#c98b3c"/><circle cx="470" cy="110" r="42" fill="#fff" stroke="#c98b3c" stroke-width="6"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(0 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(30 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(60 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(90 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(120 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(150 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(180 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(210 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(240 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(270 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(300 470 110)"/>
+<line x1="470" y1="72" x2="470" y2="77" stroke="#c9b48f" stroke-width="2.5" stroke-linecap="round" transform="rotate(330 470 110)"/>
+<line x1="470" y1="110" x2="470" y2="80" stroke="#ff3366" stroke-width="4" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 470 110" to="360 470 110" dur="3s" repeatCount="indefinite"/></line><circle cx="470" cy="110" r="5" fill="#ff3366"/><text x="470" y="140" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#4a2f12">30s</text>
+<ellipse cx="655" cy="168" rx="38" ry="6" fill="#eadcc0"/><use href="#toast" transform="translate(575,50) scale(.4)"/><rect x="640" y="98" width="30" height="20" rx="4" fill="#ffe27a" stroke="#f0c93f" stroke-width="2"/><rect x="645" y="102" width="9" height="4" rx="2" fill="#fff3b0"/><g transform="translate(693,96) rotate(40)"><rect x="-5" y="-46" width="10" height="38" rx="3" fill="#cfd6dd"/><rect x="-5" y="-8" width="10" height="28" rx="4" fill="#7a4a2a"/></g>
+<circle cx="840" cy="98" r="36" fill="#f1c7a0"/><path d="M804 96 A36 36 0 0 1 876 96 L872 84 Q840 66 808 84 Z" fill="#3b2a20"/><circle cx="827" cy="98" r="4" fill="#2b2b2b"/><circle cx="853" cy="98" r="4" fill="#2b2b2b"/><circle cx="818" cy="110" r="6" fill="#f4a9a0" opacity=".7"/><circle cx="862" cy="110" r="6" fill="#f4a9a0" opacity=".7"/><ellipse cx="840" cy="119" rx="10" ry="7" fill="#8a2f2f"><animate attributeName="ry" values="7;3;7" dur="0.9s" repeatCount="indefinite"/></ellipse><use href="#toast" transform="translate(814,91.5) scale(.3)"/><circle cx="874" cy="112.0" r="8" fill="#fff8ea"/><circle cx="844" cy="168" r="2" fill="#c98b3c"/><circle cx="832" cy="164" r="1.6" fill="#c98b3c"/>
+</g>
+<rect x="20" y="450" width="300" height="250" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<text x="44" y="492" font-family="Georgia,'Times New Roman',serif" font-size="24" font-weight="700" fill="#4a2f12">Ingredients</text><rect x="44" y="502" width="44" height="4" rx="2" fill="#c98b3c"/>
+<circle cx="54" cy="543" r="6" fill="#c98b3c"/><text x="72" y="548" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">1 slice of bread</text>
+<circle cx="54" cy="587" r="6" fill="#c98b3c"/><text x="72" y="592" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Butter, to taste</text>
+<circle cx="54" cy="631" r="6" fill="#c98b3c"/><text x="72" y="636" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">30 seconds of patience</text>
+<rect x="340" y="450" width="580" height="250" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<text x="364" y="492" font-family="Georgia,'Times New Roman',serif" font-size="24" font-weight="700" fill="#4a2f12">Instructions</text><rect x="364" y="502" width="44" height="4" rx="2" fill="#c98b3c"/>
+<circle cx="374" cy="531" r="11" fill="#c98b3c"/><text x="374" y="536.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">1</text>
+<text x="398" y="536" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Take one slice of bread</text>
+<rect x="820" y="516" width="76" height="24" rx="12" fill="#f0dfbc"/><text x="858" y="533" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#4a2f12">5 sec</text>
+<circle cx="374" cy="561" r="11" fill="#c98b3c"/><text x="374" y="566.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">2</text>
+<text x="398" y="566" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Put bread in toaster, press lever</text>
+<rect x="820" y="546" width="76" height="24" rx="12" fill="#f0dfbc"/><text x="858" y="563" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#4a2f12">3 sec</text>
+<circle cx="374" cy="591" r="11" fill="#c98b3c"/><text x="374" y="596.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">3</text>
+<text x="398" y="596" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Wait</text>
+<rect x="820" y="576" width="76" height="24" rx="12" fill="#f0dfbc"/><text x="858" y="593" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#4a2f12">30 sec</text>
+<circle cx="374" cy="621" r="11" fill="#c98b3c"/><text x="374" y="626.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">4</text>
+<text x="398" y="626" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Butter the toast while it's warm</text>
+<rect x="820" y="606" width="76" height="24" rx="12" fill="#f0dfbc"/><text x="858" y="623" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#4a2f12">10 sec</text>
+<circle cx="374" cy="651" r="11" fill="#c98b3c"/><text x="374" y="656.5" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">5</text>
+<text x="398" y="656" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="17" fill="#4a2f12">Eat</text>
+<rect x="820" y="636" width="76" height="24" rx="12" fill="#f0dfbc"/><text x="858" y="653" text-anchor="middle" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#4a2f12">2 min</text>
+<rect x="20" y="730" width="450" height="250" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<text x="44" y="772" font-family="Georgia,'Times New Roman',serif" font-size="24" font-weight="700" fill="#4a2f12">Pro tips</text><rect x="44" y="782" width="44" height="4" rx="2" fill="#c98b3c"/>
+<circle cx="54" cy="823" r="6" fill="#d9822b"/><text x="72" y="828" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="16" fill="#4a2f12">Warm toast melts butter. Cold toast does not.</text>
+<circle cx="54" cy="867" r="6" fill="#d9822b"/><text x="72" y="872" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="16" fill="#4a2f12">Do not stare at the toaster. It knows.</text>
+<circle cx="54" cy="911" r="6" fill="#d9822b"/><text x="72" y="916" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="16" fill="#4a2f12">Spread the butter to the edges. Be a pro.</text>
+<rect x="490" y="730" width="430" height="250" rx="18" fill="#fff8ea" stroke="#ead9b8" stroke-width="2"/>
+<text x="514" y="772" font-family="Georgia,'Times New Roman',serif" font-size="24" font-weight="700" fill="#4a2f12">Troubleshooting</text><rect x="514" y="782" width="44" height="4" rx="2" fill="#c98b3c"/>
+<text x="514" y="824" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" fill="#8a6a3d">Toast is burnt</text><path d="M686 818 h14 m-5 -5 l5 5 l-5 5" stroke="#c98b3c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="712" y="824" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#4a2f12">Wait less</text>
+<text x="514" y="861" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" fill="#8a6a3d">Toast is cold</text><path d="M686 855 h14 m-5 -5 l5 5 l-5 5" stroke="#c98b3c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="712" y="861" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#4a2f12">Wait more</text>
+<text x="514" y="898" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" fill="#8a6a3d">Toast is still bread</text><path d="M686 892 h14 m-5 -5 l5 5 l-5 5" stroke="#c98b3c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="712" y="898" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#4a2f12">Press the lever</text>
+<text x="514" y="935" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" fill="#8a6a3d">There is no toaster</text><path d="M686 929 h14 m-5 -5 l5 5 l-5 5" stroke="#c98b3c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="712" y="935" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#4a2f12">Reconsider your plans</text>
+</svg>
